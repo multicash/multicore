@@ -1,4 +1,5 @@
-# Bitcore
+# multicore
+![Node.js CI](https://github.com/multicash/multicore/workflows/Node.js%20CI/badge.svg?branch=master)
 
 
 
@@ -10,9 +11,9 @@
   <br>
  <img src="https://circleci.com/gh/bitpay/bitcore.svg?style=shield" alt="master build">
 </p>
-  
-  
-  
+
+
+
 **Infrastructure to build Bitcoin and blockchain-based applications for the next generation of financial technology.**
 
 ## Getting Started
@@ -21,7 +22,7 @@
 
 - Trusted P2P Peer
 - MongoDB Server >= v3.4
-- make g++ gcc 
+- make g++ gcc
 
 ### Checkout the repo
 
