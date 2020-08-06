@@ -1,5 +1,5 @@
-# Bitcore
-![Circle CI](https://circleci.com/gh/bitpay/bitcore/tree/master.svg?style=shield)
+# multicore
+![Node.js CI](https://github.com/multicash/multicore/workflows/Node.js%20CI/badge.svg?branch=master)
 
 **Infrastructure to build Bitcoin and blockchain-based applications for the next generation of financial technology.**
 
