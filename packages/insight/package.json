@@ -71,7 +71,7 @@
     "karma-cli": "1.0.1",
     "karma-coverage-istanbul-reporter": "1.2.1",
     "karma-jasmine": "1.1.0",
-    "karma-jasmine-html-reporter": "0.2.2",
+    "karma-jasmine-html-reporter": "1.5.4",
     "prettier": "^1.15.3",
     "serve": "^10.1.1",
     "serve-static": "1.13.2",
