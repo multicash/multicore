@@ -12,7 +12,7 @@ var networkMaps = {};
  * (a.k.a. "mainnet") and "testnet".
  * @constructor
  */
-function Network() {}
+function Network() { }
 
 Network.prototype.toString = function toString() {
   return this.name;
@@ -34,7 +34,7 @@ function get(arg, keys) {
     if (!_.isArray(keys)) {
       keys = [keys];
     }
-    var containsArg = function(key) {
+    var containsArg = function (key) {
       return networks[index][key] === arg;
     };
     for (var index in networks) {
@@ -44,7 +44,7 @@ function get(arg, keys) {
     }
     return undefined;
   }
-  if(networkMaps[arg] && networkMaps[arg].length >= 1) {
+  if (networkMaps[arg] && networkMaps[arg].length >= 1) {
     return networkMaps[arg][0];
   } else {
     return networkMaps[arg];
@@ -101,9 +101,9 @@ function addNetwork(data) {
       dnsSeeds: data.dnsSeeds
     });
   }
-  _.each(network, function(value) {
+  _.each(network, function (value) {
     if (!_.isUndefined(value) && !_.isObject(value)) {
-      if(!networkMaps[value]) {
+      if (!networkMaps[value]) {
         networkMaps[value] = [];
       }
       networkMaps[value].push(network);
@@ -139,21 +139,16 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x00,
-  privatekey: 0x80,
-  scripthash: 0x05,
-  bech32prefix: 'bc',
-  xpubkey: 0x0488b21e,
-  xprivkey: 0x0488ade4,
-  networkMagic: 0xf9beb4d9,
-  port: 8333,
+  pubkeyhash: 50,
+  privatekey: 183,
+  scripthash: 117,
+  bech32prefix: 'multicash',
+  xpubkey: 0x0488B21E,
+  xprivkey: 0x0488ADE4,
+  networkMagic: 0xabcddfa2,
+  port: 2001,
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
+    'localhost'
   ]
 });
 
@@ -166,19 +161,16 @@ var livenet = get('livenet');
 addNetwork({
   name: 'testnet',
   alias: 'test',
-  pubkeyhash: 0x6f,
-  privatekey: 0xef,
-  scripthash: 0xc4,
-  bech32prefix: 'tb',
-  xpubkey: 0x043587cf,
+  pubkeyhash: 111,
+  privatekey: 239,
+  scripthash: 196,
+  bech32prefix: 'tpc',
+  xpubkey: 0x043587CF,
   xprivkey: 0x04358394,
-  networkMagic: 0x0b110907,
-  port: 18333,
+  networkMagic: 0xf2cfff0f,
+  port: 9903,
   dnsSeeds: [
-    'testnet-seed.bitcoin.petertodd.org',
-    'testnet-seed.bluematt.me',
-    'testnet-seed.alexykot.me',
-    'testnet-seed.bitcoin.schildbach.de'
+    'localhost'
   ]
 });
 
