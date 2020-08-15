@@ -31,7 +31,7 @@ function HeadersMessage(arg, options) {
 }
 inherits(HeadersMessage, Message);
 
-HeadersMessage.prototype.setPayload = function(payload) {
+HeadersMessage.prototype.setPayload = function (payload) {
   $.checkArgument(payload && payload.length > 0, 'No data found to create Headers message');
   var parser = new BufferReader(payload);
   var count = parser.readVarintNum();
@@ -40,13 +40,14 @@ HeadersMessage.prototype.setPayload = function(payload) {
   for (var i = 0; i < count; i++) {
     var header = this.BlockHeader.fromBufferReader(parser);
     this.headers.push(header);
+    var header_count = parser.readUInt8();
     var txn_count = parser.readUInt8();
     $.checkState(txn_count === 0, 'txn_count should always be 0');
   }
   utils.checkFinished(parser);
 };
 
-HeadersMessage.prototype.getPayload = function() {
+HeadersMessage.prototype.getPayload = function () {
   var bw = new BufferWriter();
   bw.writeVarintNum(this.headers.length);
   for (var i = 0; i < this.headers.length; i++) {

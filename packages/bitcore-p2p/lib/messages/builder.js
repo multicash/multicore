@@ -19,7 +19,7 @@ function builder(options) {
   options.BlockHeader = options.BlockHeader || bitcore.BlockHeader;
   options.Transaction = options.Transaction || bitcore.Transaction;
   options.MerkleBlock = options.MerkleBlock || bitcore.MerkleBlock;
-  options.protocolVersion = options.protocolVersion || 70001;
+  options.protocolVersion = options.protocolVersion || 70015;
 
   var exported = {
     constructors: {
@@ -52,36 +52,39 @@ function builder(options) {
       alert: 'Alert',
       reject: 'Reject',
       merkleblock: 'MerkleBlock',
+      feefilter: 'FeeFilter',
       filterload: 'FilterLoad',
       filteradd: 'FilterAdd',
       filterclear: 'FilterClear',
       getblocks: 'GetBlocks',
       getheaders: 'GetHeaders',
+      sendheaders: 'SendHeaders',
+      sendcmpct: 'SendCmpct',
       mempool: 'MemPool',
       getaddr: 'GetAddr'
     },
     commands: {}
   };
 
-  exported.add = function(key, Command) {
-    exported.commands[key] = function(obj) {
+  exported.add = function (key, Command) {
+    exported.commands[key] = function (obj) {
       return new Command(obj, options);
     };
 
     exported.commands[key]._constructor = Command;
 
-    exported.commands[key].fromBuffer = function(buffer) {
+    exported.commands[key].fromBuffer = function (buffer) {
       var message = exported.commands[key]();
       message.setPayload(buffer);
       return message;
     };
   };
 
-  Object.keys(exported.commandsMap).forEach(function(key) {
+  Object.keys(exported.commandsMap).forEach(function (key) {
     exported.add(key, require('./commands/' + key));
   });
 
-  exported.inventoryCommands.forEach(function(command) {
+  exported.inventoryCommands.forEach(function (command) {
 
     // add forTransaction methods
     exported.commands[command].forTransaction = function forTransaction(hash) {
