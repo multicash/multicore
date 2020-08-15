@@ -4,7 +4,7 @@ import { MultiCashP2PWorker } from './p2p';
 import { VerificationPeer } from './VerificationPeer';
 
 export default class MultiCashModule extends BaseModule {
-  private readonly COIN_ID = 'MCX';
+  private readonly COIN_ID = 'MXC';
 
   constructor(services: BaseModule['bitcoreServices']) {
     super(services);
