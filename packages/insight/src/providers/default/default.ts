@@ -8,9 +8,9 @@ export class DefaultProvider {
     '%NETWORK%': string;
     '%NUM_BLOCKS%': string;
   } = {
-    '%CHAIN%': process.env.CHAIN || 'BTC',
+    '%CHAIN%': process.env.CHAIN || 'MXC',
     '%API_PREFIX%': process.env.API_PREFIX || '/api',
-    '%NETWORK%': process.env.NETWORK || 'mainnet',
+    '%NETWORK%': process.env.NETWORK || 'livenet',
     '%NUM_BLOCKS%': process.env.NUM_BLOCKS || '15'
   };
 
