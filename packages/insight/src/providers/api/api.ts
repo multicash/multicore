@@ -21,7 +21,7 @@ const EnvApiHosts: { [env: string]: { [chain: string]: string } } = {
     default: 'https://api.bitcore.io/api',
     ETH: 'https://api-eth.bitcore.io/api'
   },
-  dev: { default: '/api' }
+  dev: { default: '/api', MXC: '/api' }
 };
 
 const CurrentApiHosts = EnvApiHosts[CurrentEnv];
@@ -40,6 +40,7 @@ export class ApiProvider {
 
   public ratesAPI = {
     btc: 'https://bitpay.com/api/rates',
+    mxc: 'https://bitpay.com/api/rates',
     bch: 'https://bitpay.com/api/rates/bch',
     eth: 'https://bitpay.com/api/rates/eth'
   };
