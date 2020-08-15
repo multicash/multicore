@@ -31,6 +31,7 @@ var BlockHeader = function BlockHeader(arg) {
   this.timestamp = info.time;
   this.bits = info.bits;
   this.nonce = info.nonce;
+  this.nflags = info.nflags
 
   if (info.hash) {
     $.checkState(
@@ -142,6 +143,7 @@ BlockHeader._fromBufferReader = function _fromBufferReader(br) {
   info.time = br.readUInt32LE();
   info.bits = br.readUInt32LE();
   info.nonce = br.readUInt32LE();
+  info.nflags = br.readInt32LE();
   return info;
 };
 
@@ -172,8 +174,8 @@ BlockHeader.prototype.toObject = BlockHeader.prototype.toJSON = function toObjec
 /**
  * @returns {Buffer} - A Buffer of the BlockHeader
  */
-BlockHeader.prototype.toBuffer = function toBuffer() {
-  return this.toBufferWriter().concat();
+BlockHeader.prototype.toBuffer = function toBuffer(isGetHash = false) {
+  return this.toBufferWriter(null, isGetHash).concat();
 };
 
 /**
@@ -187,7 +189,7 @@ BlockHeader.prototype.toString = function toString() {
  * @param {BufferWriter} - An existing instance BufferWriter
  * @returns {BufferWriter} - An instance of BufferWriter representation of the BlockHeader
  */
-BlockHeader.prototype.toBufferWriter = function toBufferWriter(bw) {
+BlockHeader.prototype.toBufferWriter = function toBufferWriter(bw, isGetHash) {
   if (!bw) {
     bw = new BufferWriter();
   }
@@ -197,6 +199,9 @@ BlockHeader.prototype.toBufferWriter = function toBufferWriter(bw) {
   bw.writeUInt32LE(this.time);
   bw.writeUInt32LE(this.bits);
   bw.writeUInt32LE(this.nonce);
+  if (isGetHash) {
+    bw.writeInt32LE(this.nflags);
+  }
   return bw;
 };
 
@@ -245,7 +250,7 @@ var idProperty = {
   /**
    * @returns {string} - The big endian hash buffer of the header
    */
-  get: function() {
+  get: function () {
     if (!this._id) {
       this._id = BufferReader(this._getHash()).readReverse().toString('hex');
     }

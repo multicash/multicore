@@ -308,6 +308,9 @@ Transaction.prototype.hasWitnesses = function() {
 
 Transaction.prototype.toBufferWriter = function(writer, noWitness) {
   writer.writeInt32LE(this.version);
+  // ppcoin: if no timestamp present, take current time (in seconds)
+  var timestamp = this.timestamp ? this.timestamp : new Date().getTime()/1000;
+  writer.writeUInt32LE(timestamp);
 
   var hasWitnesses = this.hasWitnesses();
 
@@ -350,6 +353,9 @@ Transaction.prototype.fromBufferReader = function(reader) {
   $.checkArgument(!reader.finished(), 'No transaction data received');
 
   this.version = reader.readInt32LE();
+  // ppcoin: deserialize timestamp
+  this.timestamp = reader.readUInt32LE();
+  
   var sizeTxIns = reader.readVarintNum();
 
   // check for segwit

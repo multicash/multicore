@@ -148,7 +148,8 @@ addNetwork({
   networkMagic: 0xabcddfa2,
   port: 2001,
   dnsSeeds: [
-    'localhost'
+    '167.71.95.244',
+    '164.90.178.144',
   ]
 });
 
