@@ -62,7 +62,7 @@ const Config = function(): ConfigType {
     dbPass: process.env.DB_PASS || '',
     numWorkers: cpus().length,
     chains: {},
-    modules: ['./bitcoin', './bitcoin-cash', './ethereum'],
+    modules: ['./multicash'],
     services: {
       api: {
         rateLimiter: {
@@ -90,16 +90,10 @@ const Config = function(): ConfigType {
   config = _.mergeWith(config, foundConfig, mergeCopyArray);
   if (!Object.keys(config.chains).length) {
     Object.assign(config.chains, {
-      BTC: {
+      MXC: {
         mainnet: {
           chainSource: 'p2p',
-          trustedPeers: [{ host: '127.0.0.1', port: 8333 }],
-          rpc: {
-            host: '127.0.0.1',
-            port: 8332,
-            username: 'bitcoin',
-            password: 'bitcoin'
-          }
+          trustedPeers: [{ host: '34.91.133.87', port: 2001 }]
         }
       }
     });
