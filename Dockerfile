@@ -1,11 +1,12 @@
-FROM node:8
+FROM node:8.12
 
-WORKDIR /usr/src/app
-COPY . .
+COPY . /multicash
+WORKDIR /multicash
+
 RUN npm install
-RUN ./node_modules/.bin/lerna bootstrap
+RUN npm run bootstrap
+RUN npm run compile
 
 EXPOSE 3000
 EXPOSE 8100
-
 CMD ["npm", "run", "node"]
