@@ -18,8 +18,7 @@ const CurrentEnv = process.env.ENV || 'dev';
 
 const EnvApiHosts: { [env: string]: { [chain: string]: string } } = {
   prod: {
-    default: 'https://api.bitcore.io/api',
-    ETH: 'https://api-eth.bitcore.io/api'
+    default: 'https://api.multicash.dev/api'
   },
   dev: { default: '/api', MXC: '/api' }
 };
