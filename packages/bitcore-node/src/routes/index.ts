@@ -59,6 +59,10 @@ app.use(cors());
 app.use(LogMiddleware());
 app.use(CacheMiddleware(CacheTimes.Second, CacheTimes.Second));
 app.use(RateLimiter('GLOBAL', 10, 200, 4000));
+
+app.use('/healthz', (_: Request, resp: Response) => {
+  resp.status(200).send();
+});
 app.use('/api', getRouterFromFile('status'));
 
 app.use('/api/:chain/:network', (req: Request, resp: Response, next: any) => {
