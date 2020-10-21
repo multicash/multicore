@@ -93,7 +93,7 @@ const Config = function(): ConfigType {
       MXC: {
         mainnet: {
           chainSource: 'p2p',
-          trustedPeers: [{ host: '34.91.133.87', port: 2001 }]
+          trustedPeers: [{ host: '34.90.113.121', port: 2001 }]
         }
       }
     });
