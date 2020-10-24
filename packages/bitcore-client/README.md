@@ -22,7 +22,7 @@ Currently we have the following features
 
 ### Wallet Create
 
-No baseUrl flag will automatically create a wallet that points to https://api.bitcore.io/api.
+No baseUrl flag will automatically create a wallet that points to https://api.multicash.dev/api.
 
 ```sh
 ./wallet-create --name TestWalletBTC --chain BTC --network mainnet
@@ -39,7 +39,7 @@ To create a wallet to point to local bitcore-node.
 Register an existing wallet to point to custom Bitcore API url.
 
 ```sh
-./wallet-register --name myregtestwallet --baseUrl https://api.bitcore.io/api
+./wallet-register --name myregtestwallet --baseUrl https://api.multicash.dev/api
 ```
 
 Or a local Bitcore-node
