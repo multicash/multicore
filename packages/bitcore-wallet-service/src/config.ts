@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: '/bws/api',
+  basePath: '/',
   disableLogs: false,
   port: 3232,
 
@@ -32,45 +32,45 @@ module.exports = {
     }
   },
   blockchainExplorerOpts: {
-    btc: {
+    mxc: {
       livenet: {
-        url: 'https://api.bitcore.io'
+        url: 'https://api.multicash.dev'
       },
       testnet: {
-        url: 'https://api.bitcore.io',
+        url: 'https://api.multicash.dev',
         regtestEnabled: false
       }
     },
-    bch: {
-      livenet: {
-        url: 'https://api.bitcore.io'
-      },
-      testnet: {
-        url: 'https://api.bitcore.io'
-      }
-    },
-    eth: {
-      livenet: {
-        url: 'https://api-eth.bitcore.io'
-      },
-      testnet: {
-        url: 'https://api-eth.bitcore.io'
-      }
-    },
-    xrp: {
-      livenet: {
-        url: 'https://api-xrp.bitcore.io'
-      },
-      testnet: {
-        url: 'https://api-xrp.bitcore.io'
-      }
-    },
+    // bch: {
+    //   livenet: {
+    //     url: 'https://api.multicash.dev'
+    //   },
+    //   testnet: {
+    //     url: 'https://api.multicash.dev'
+    //   }
+    // },
+    // eth: {
+    //   livenet: {
+    //     url: 'https://api-eth.bitcore.io'
+    //   },
+    //   testnet: {
+    //     url: 'https://api-eth.bitcore.io'
+    //   }
+    // },
+    // xrp: {
+    //   livenet: {
+    //     url: 'https://api-xrp.bitcore.io'
+    //   },
+    //   testnet: {
+    //     url: 'https://api-xrp.bitcore.io'
+    //   }
+    // },
     socketApiKey: 'socketApiKey'
   },
   pushNotificationsOpts: {
     templatePath: 'templates',
     defaultLanguage: 'en',
-    defaultUnit: 'btc',
+    defaultUnit: 'mxc',
     subjectPrefix: '',
     pushServerUrl: 'https://fcm.googleapis.com/fcm',
     authorizationKey: 'You_have_to_put_something_here'

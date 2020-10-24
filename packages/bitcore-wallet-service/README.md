@@ -130,7 +130,7 @@ The are plenty example creating and sending proposals in the `/test/integration`
 blockchainExplorerOpts: {
     btc: {
       livenet: {
-        url: 'https://api.bitcore.io'
+        url: 'https://api.multicash.dev'
       },
       testnet: {
         // set url to http://localhost:3000 here
