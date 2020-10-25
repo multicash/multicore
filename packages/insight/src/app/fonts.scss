@@ -55,6 +55,14 @@ $font-path: "../assets/fonts";
   src: url( $font-path + '/Heebo-Black.ttf');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-display: swap;
+  src: url( $font-path + '/Montserrat-ExtraBold.ttf');
+}
+
+
 $font-family-base: 'Heebo';
 
 * {
