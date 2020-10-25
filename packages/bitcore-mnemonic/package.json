@@ -35,12 +35,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "assert": "^1.4.1",
+    "assert": "1.5.0",
     "bitcore-build": "^8.24.2",
-    "brfs": "^2.0.1",
-    "chai": "^4.2.0",
-    "gulp": "^4.0.0",
-    "mocha": "^5.2.0"
+    "brfs": "2.0.2",
+    "chai": "4.2.0",
+    "gulp": "4.0.2",
+    "mocha": "5.2.0"
   },
   "dependencies": {
     "bitcore-lib": "^8.24.2",
