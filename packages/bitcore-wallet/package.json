@@ -17,20 +17,20 @@
     "url": "https://github.com/bitpay/bitcore-wallet/issues"
   },
   "dependencies": {
-    "async": "^2.5.0",
+    "async": "2.6.3",
     "bitcore-lib": "^8.22.0",
     "bitcore-wallet-client": "^8.22.0",
-    "commander": "^2.6.0",
-    "lodash": "^3.3.1",
-    "moment": "^2.9.0",
-    "npmlog": "^1.2.0",
-    "qr-image": "^3.1.0",
-    "read": "^1.0.5",
-    "sjcl": "^1.0.2"
+    "commander": "2.20.3",
+    "lodash": "3.10.1",
+    "moment": "2.24.0",
+    "npmlog": "1.2.1",
+    "qr-image": "3.2.0",
+    "read": "1.0.7",
+    "sjcl": "1.0.8"
   },
   "devDependencies": {
-    "chai": "^3.3.0",
-    "sinon": "^1.17.1"
+    "chai": "3.5.0",
+    "sinon": "1.17.7"
   },
   "scripts": {
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
