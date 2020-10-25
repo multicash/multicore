@@ -4,6 +4,10 @@ head-nav {
     width: 35px;
   }
 
+  .nav-logo {
+    display: inline-flex;
+  }
+
   .search-image {
     width: 16px;
     opacity: .5;
@@ -44,6 +48,7 @@ head-nav {
           width: auto;
           cursor: pointer;
           color: #fff;
+          font-family: 'Montserrat';
           font-size: 2em;
           font-style: italic;
           font-weight: 800;
@@ -91,6 +96,7 @@ head-nav {
 
   .nav-container {
     height: 80px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   }
 
   .searchbar-md {

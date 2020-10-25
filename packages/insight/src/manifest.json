@@ -5,11 +5,11 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "assets/img/logo.png",
-      "sizes": "250x250",
-      "type": "image/png"
+      "src": "assets/img/manifest-logo.jpg",
+      "sizes": "1000x1000",
+      "type": "image/jpg"
     }
   ],
-  "background_color": "#4e8ef7",
+  "background_color": "#ffffff",
   "theme_color": "#4e8ef7"
 }
