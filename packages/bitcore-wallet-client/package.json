@@ -44,7 +44,7 @@
     "bitcore-wallet-service": "^8.22.0",
     "browserify": "13.3.0",
     "chai": "1.10.0",
-    "coveralls": "3.0.9",
+    "coveralls": "3.1.0",
     "istanbul": "*",
     "kbpgp": "2.1.13",
     "mocha": "5.2.0",
