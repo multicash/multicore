@@ -44,7 +44,7 @@
     "lodash": "=4.17.15"
   },
   "devDependencies": {
-    "base-x": "=3.0.4",
+    "base-x": "3.0.8",
     "bitcore-build": "^8.22.0",
     "brfs": "^2.0.1",
     "chai": "^4.2.0",
