@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.136",
-    "@types/node": "^10.0.2",
+    "@types/node": "10.17.44",
     "bitcore-wallet-service": "^8.22.0",
     "browserify": "^13.1.0",
     "chai": "^1.9.1",
