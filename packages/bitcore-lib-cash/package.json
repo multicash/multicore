@@ -46,10 +46,10 @@
   "devDependencies": {
     "base-x": "=3.0.4",
     "bitcore-build": "^8.24.2",
-    "brfs": "2.0.2",
-    "chai": "4.2.0",
-    "gulp": "4.0.2",
-    "sinon": "7.5.0"
+    "brfs": "^2.0.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "sinon": "^7.1.1"
   },
   "license": "MIT",
   "gitHead": "012cc0216a9bc6b195035855bd17149bad41acd1"
