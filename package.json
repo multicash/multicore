@@ -54,7 +54,7 @@
   "devDependencies": {
     "cz-customizable": "^5.2.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "2.22.1",
     "husky": "^2.4.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
