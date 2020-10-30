@@ -68,10 +68,10 @@
   },
   "devDependencies": {
     "bitcore-build": "^8.24.2",
-    "brfs": "^1.2.0",
-    "chai": "~1.10.0",
-    "gulp": "^4.0.0",
-    "sinon": "^1.12.2"
+    "brfs": "1.6.1",
+    "chai": "1.10.0",
+    "gulp": "4.0.2",
+    "sinon": "1.17.7"
   },
   "license": "MIT",
   "gitHead": "012cc0216a9bc6b195035855bd17149bad41acd1"
