@@ -46,7 +46,7 @@
   "devDependencies": {
     "@types/bcrypt": "3.0.0",
     "@types/bcryptjs": "2.4.2",
-    "@types/elliptic": "6.4.3",
+    "@types/elliptic": "6.4.12",
     "@types/ethereumjs-util": "5.2.0",
     "@types/mongodb": "3.3.8",
     "@types/node": "10.12.15",
