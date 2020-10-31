@@ -61,7 +61,7 @@
     "@angular/cli": "7.3.4",
     "@angular/compiler-cli": "5.2.10",
     "@ionic/app-scripts": "3.2.3",
-    "@types/jasmine": "2.5.41",
+    "@types/jasmine": "2.8.17",
     "@types/lodash": "4.14.104",
     "@types/node": "7.0.4",
     "codecov": "3.7.1",
