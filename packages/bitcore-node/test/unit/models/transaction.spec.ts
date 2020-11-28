@@ -42,7 +42,7 @@ describe('Transaction Model', function() {
     );
 
     await TransactionStorage.streamMintOps({
-      chain: 'MXC',
+      chain: 'MCX',
       network: 'regtest',
       txs: [tx],
       height: 8534,
