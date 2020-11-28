@@ -20,7 +20,7 @@ const EnvApiHosts: { [env: string]: { [chain: string]: string } } = {
   prod: {
     default: 'https://api.multicash.dev/api'
   },
-  dev: { default: '/api', MXC: '/api' }
+  dev: { default: '/api', MCX: '/api' }
 };
 
 const CurrentApiHosts = EnvApiHosts[CurrentEnv];

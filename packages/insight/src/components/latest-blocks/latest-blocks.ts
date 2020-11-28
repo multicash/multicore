@@ -65,7 +65,7 @@ export class LatestBlocksComponent implements OnInit, OnDestroy {
               (block: ApiEthBlock & ApiUtxoCoinBlock) => {
                 if (
                   this.chainNetwork.chain === 'BTC' ||
-                  this.chainNetwork.chain === 'MXC' ||
+                  this.chainNetwork.chain === 'MCX' ||
                   this.chainNetwork.chain === 'BCH'
                 ) {
                   return this.blocksProvider.toUtxoCoinAppBlock(block);
@@ -103,7 +103,7 @@ export class LatestBlocksComponent implements OnInit, OnDestroy {
             (block: ApiEthBlock & ApiUtxoCoinBlock) => {
               if (
                 this.chainNetwork.chain === 'BTC' ||
-                this.chainNetwork.chain === 'MXC' ||
+                this.chainNetwork.chain === 'MCX' ||
                 this.chainNetwork.chain === 'BCH'
               ) {
                 return this.blocksProvider.toUtxoCoinAppBlock(block);

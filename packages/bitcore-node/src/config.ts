@@ -90,7 +90,7 @@ const Config = function(): ConfigType {
   config = _.mergeWith(config, foundConfig, mergeCopyArray);
   if (!Object.keys(config.chains).length) {
     Object.assign(config.chains, {
-      MXC: {
+      MCX: {
         mainnet: {
           chainSource: 'p2p',
           trustedPeers: [{ host: '34.90.113.121', port: 2001 }]
