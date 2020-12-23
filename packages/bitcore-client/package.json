@@ -49,7 +49,7 @@
     "@types/elliptic": "6.4.3",
     "@types/ethereumjs-util": "5.2.0",
     "@types/mongodb": "3.3.8",
-    "@types/node": "10.12.15",
+    "@types/node": "10.17.50",
     "@types/request": "2.48.1",
     "@types/request-promise-native": "1.0.15",
     "@types/secp256k1": "3.5.0",
