@@ -1,5 +1,5 @@
 {
-  "name": "@bitpay/insight-previous",
+  "name": "multicore-insight",
   "description": "A blockchain explorer for Bitcore",
   "version": "8.24.2",
   "repository": "https://github.com/multicash/multicore/tree/master/packages/multicore-insight",
@@ -15,6 +15,7 @@
     "blockchain",
     "block explorer",
     "bitcoin",
+    "multicash",
     "multicore",
     "API"
   ],
