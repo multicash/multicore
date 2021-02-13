@@ -188,7 +188,11 @@ export class Utils {
         );
         break;
       case Constants.SCRIPT_TYPES.P2SH:
-        multicoreAddress = multicore.Address.createMultisig(publicKeys, m, network);
+        multicoreAddress = multicore.Address.createMultisig(
+          publicKeys,
+          m,
+          network
+        );
         break;
       case Constants.SCRIPT_TYPES.P2WPKH:
         multicoreAddress = multicore.Address.fromPublicKey(

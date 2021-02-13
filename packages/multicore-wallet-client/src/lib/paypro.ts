@@ -1,4 +1,8 @@
-import { BitcoreLib, BitcoreLibCash, BitcoreLibMcx } from 'multicrypto-wallet-core';
+import {
+  BitcoreLib,
+  BitcoreLibCash,
+  BitcoreLibMcx
+} from 'multicrypto-wallet-core';
 
 var $ = require('preconditions').singleton();
 const URL = require('url');
