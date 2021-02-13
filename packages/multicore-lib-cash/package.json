@@ -35,20 +35,20 @@
     "request": "browser-request"
   },
   "dependencies": {
-    "multicore-lib": "^8.24.2",
     "bn.js": "=4.11.8",
     "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
     "elliptic": "^6.5.3",
     "inherits": "=2.0.1",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "multicore-lib": "^8.24.2"
   },
   "devDependencies": {
     "base-x": "=3.0.4",
-    "multicore-build": "^8.24.2",
     "brfs": "2.0.2",
     "chai": "4.2.0",
     "gulp": "4.0.2",
+    "multicore-build": "^8.24.2",
     "sinon": "7.5.0"
   },
   "license": "MIT",

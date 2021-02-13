@@ -19,17 +19,17 @@
     "url": "https://github.com/multicash/multicore/tree/master/packages/multicore-p2p-mcx"
   },
   "dependencies": {
-    "multicore-lib": "^8.24.2",
-    "multicore-lib-mcx": "^8.24.2",
     "bloom-filter": "^0.2.0",
     "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
+    "multicore-lib": "^8.24.2",
+    "multicore-lib-mcx": "^8.24.2",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {
-    "multicore-build": "^8.24.2",
     "brfs": "1.6.1",
     "chai": "1.10.0",
     "gulp": "4.0.2",
+    "multicore-build": "^8.24.2",
     "sinon": "1.17.7"
   },
   "license": "MIT",

@@ -44,10 +44,10 @@
     "lodash": "^4.17.20"
   },
   "devDependencies": {
-    "multicore-build": "^8.24.2",
     "brfs": "2.0.2",
     "chai": "4.2.0",
     "gulp": "4.0.2",
+    "multicore-build": "^8.24.2",
     "sinon": "7.5.0"
   },
   "license": "MIT",
