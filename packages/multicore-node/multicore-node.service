@@ -1,0 +1,11 @@
+[Unit]
+Description=Multicore Node
+After=network.target
+
+[Service]
+User=multicore
+Group=multicore
+ExecStart=/usr/bin/node /home/multicore/multicore/packages/multicore-node/server.js
+
+[Install]
+WantedBy=multi-user.target

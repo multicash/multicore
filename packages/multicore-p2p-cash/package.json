@@ -1,0 +1,78 @@
+{
+  "name": "multicore-p2p-cash",
+  "version": "8.24.2",
+  "description": "Interface to the bitcoin P2P network for multicore",
+  "author": "BitPay <dev@bitpay.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "coverage": "gulp coverage",
+    "build": "gulp",
+    "pub": "npm run build && npm publish"
+  },
+  "contributors": [
+    {
+      "name": "Justin Langston",
+      "email": "justin@bitpay.com"
+    },
+    {
+      "name": "Yemel Jardi",
+      "email": "yemel@bitpay.com"
+    },
+    {
+      "name": "Braydon Fuller",
+      "email": "braydon@bitpay.com"
+    },
+    {
+      "name": "Ryan X. Charles",
+      "email": "ryan@bitpay.com"
+    },
+    {
+      "name": "Eric Martindale",
+      "email": "eric@bitpay.com"
+    },
+    {
+      "name": "Philip Hutchins",
+      "email": "philip@bitpay.com"
+    },
+    {
+      "name": "Manuel Araoz",
+      "email": "maraoz@bitpay.com"
+    },
+    {
+      "name": "Esteban Ordano",
+      "email": "eordano@gmail.com"
+    },
+    {
+      "name": "Elichai Turkel"
+    },
+    {
+      "name": "Chris Kleeschulte",
+      "email": "chrisk@bitpay.com"
+    }
+  ],
+  "keywords": [
+    "bitcoin",
+    "multicore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/multicash/multicore/tree/master/packages/multicore-p2p-cash"
+  },
+  "dependencies": {
+    "multicore-lib": "^8.24.2",
+    "multicore-lib-cash": "^8.24.2",
+    "bloom-filter": "^0.2.0",
+    "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
+    "socks5-client": "^0.3.6"
+  },
+  "devDependencies": {
+    "multicore-build": "^8.24.2",
+    "brfs": "1.6.1",
+    "chai": "1.10.0",
+    "gulp": "4.0.2",
+    "sinon": "1.17.7"
+  },
+  "license": "MIT",
+  "gitHead": "012cc0216a9bc6b195035855bd17149bad41acd1"
+}

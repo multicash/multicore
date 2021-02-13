@@ -1,8 +1,8 @@
 #!/bin/sh
 
-MODULES=' crypto-wallet-core bitcore-wallet-service bitcore-wallet-client bitcore-client'
+MODULES=' multicrypto-wallet-core multicore-wallet-service multicore-wallet-client multicore-client'
 
-for i in $MODULES; 
+for i in $MODULES;
 do
   echo "## $i"
   cd $i && npm run compile || (echo "ERROR" && exit) && cd ..

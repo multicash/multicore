@@ -28,7 +28,7 @@
 
 
 ```sh
-git clone git@github.com:bitpay/bitcore.git
+git clone git@github.com:multicash/multicore.git
 git checkout master
 npm install
 ```
@@ -38,12 +38,12 @@ npm install
 ### 1. Setup Bitcore config
 
 <details>
-<summary>Example bitcore.config.json</summary>
+<summary>Example multicore.config.json</summary>
 <br>
 
 ```json
 {
-  "bitcoreNode": {
+  "multicoreNode": {
     "chains": {
       "BTC": {
         "mainnet": {
@@ -131,7 +131,7 @@ irc=1
 upnp=1
 
 # Make sure port & rpcport matches the
-# bitcore.config.json ports for BTC mainnet
+# multicore.config.json ports for BTC mainnet
 
 # if using Bitcoin Core v0.17+ prefix
 # [main]
@@ -166,36 +166,35 @@ npm run node
 
 ## Applications
 
-- [Bitcore Node](packages/bitcore-node) - A full node with extended capabilities using Bitcoin Core
-- [Bitcore Wallet](packages/bitcore-wallet) - A command-line based wallet client
-- [Bitcore Wallet Client](packages/bitcore-wallet-client) - A client for the wallet service
-- [Bitcore Wallet Service](packages/bitcore-wallet-service) - A multisig HD service for wallets
-- [Bitpay Wallet](https://github.com/bitpay/copay) - An easy-to-use, multiplatform, multisignature, secure bitcoin wallet
-- [Insight](packages/insight) - A blockchain explorer web user interface
+- [Bitcore Node](packages/multicore-node) - A full node with extended capabilities using Bitcoin Core
+- [Bitcore Wallet](packages/multicore-wallet) - A command-line based wallet client
+- [Bitcore Wallet Client](packages/multicore-wallet-client) - A client for the wallet service
+- [Bitcore Wallet Service](packages/multicore-wallet-service) - A multisig HD service for wallets
+- [Insight](packages/multicore-insight) - A blockchain explorer web user interface
 
 ## Libraries
 
 - [Bitcore Channel](https://github.com/bitpay/bitcore-channel) - Micropayment channels for rapidly adjusting bitcoin transactions
 - [Bitcore ECIES](https://github.com/bitpay/bitcore-ecies) - Uses ECIES symmetric key negotiation from public keys to encrypt arbitrarily long data streams
-- [Bitcore Lib](packages/bitcore-lib) - A pure and powerful JavaScript Bitcoin library
-- [Bitcore Lib Cash](packages/bitcore-lib-cash) - A pure and powerful JavaScript Bitcoin Cash library
+- [Bitcore Lib](packages/multicore-lib) - A pure and powerful JavaScript Bitcoin library
+- [Bitcore Lib Cash](packages/multicore-lib-cash) - A pure and powerful JavaScript Bitcoin Cash library
 - [Bitcore Message](https://github.com/bitpay/bitcore-message) - Bitcoin message verification and signing
-- [Bitcore Mnemonic](packages/bitcore-mnemonic) - Implements mnemonic code for generating deterministic keys
-- [Bitcore P2P](packages/bitcore-p2p) - The peer-to-peer networking protocol for BTC
-- [Bitcore P2P Cash](packages/bitcore-p2p-cash) - The peer-to-peer networking protocol for BCH
-- [Crypto Wallet Core](packages/crypto-wallet-core) - A coin-agnostic wallet library for creating transactions, signing, and address derivation
+- [Bitcore Mnemonic](packages/multicore-mnemonic) - Implements mnemonic code for generating deterministic keys
+- [Bitcore P2P](packages/multicore-p2p) - The peer-to-peer networking protocol for BTC
+- [Bitcore P2P Cash](packages/multicore-p2p-cash) - The peer-to-peer networking protocol for BCH
+- [Crypto Wallet Core](packages/multicrypto-wallet-core) - A coin-agnostic wallet library for creating transactions, signing, and address derivation
 
 ## Extras
 
-- [Bitcore Build](packages/bitcore-build) - A helper to add tasks to gulp
-- [Bitcore Client](packages/bitcore-client) - A helper to create a wallet using the bitcore-v8 infrastructure
+- [Bitcore Build](packages/multicore-build) - A helper to add tasks to gulp
+- [Bitcore Client](packages/multicore-client) - A helper to create a wallet using the multicore-v8 infrastructure
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/bitpay/bitcore/blob/master/Contributing.md) on the main bitcore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/multicash/multicore/blob/master/Contributing.md) on the main multicore repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/multicash/multicore/blob/master/LICENSE).
 
 Copyright 2013-2019 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
