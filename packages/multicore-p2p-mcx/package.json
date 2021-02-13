@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "multicore-lib": "^8.24.2",
+    "multicore-lib-mcx": "^8.24.2",
     "bloom-filter": "^0.2.0",
     "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
     "socks5-client": "^0.3.6"

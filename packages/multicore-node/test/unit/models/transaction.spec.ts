@@ -8,12 +8,8 @@ import { WalletAddressStorage } from '../../../src/models/walletAddress';
 import { BitcoinTransaction, TransactionInput } from '../../../src/types/namespaces/Bitcoin';
 import { TransactionFixture } from '../../fixtures/transaction.fixture';
 import { mockStorage } from '../../helpers';
-<<<<<<< HEAD:packages/multicore-node/test/unit/models/transaction.spec.ts
 import { unitAfterHelper, unitBeforeHelper } from '../../helpers/unit';
 const multicoreLib = require('multicore-lib');
-=======
-const multicoreLib = require('multicore-lib');
->>>>>>> rename and add compatibility:packages/multicore-node/test/unit/models/transaction.unit.ts
 
 describe('Transaction Model', function() {
   before(unitBeforeHelper);

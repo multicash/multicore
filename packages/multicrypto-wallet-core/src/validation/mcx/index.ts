@@ -1,7 +1,7 @@
 import { IValidation } from '..';
 const BitcoreMcx = require('multicore-lib-mcx');
 
-export class BchValidation implements IValidation {
+export class McxValidation implements IValidation {
   validateAddress(network: string, address: string): boolean {
     const AddressCash = BitcoreMcx.Address;
     // Regular Address: try multicash

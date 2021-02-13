@@ -1,14 +1,5 @@
-<<<<<<< HEAD:packages/multicore-node/test/integration/models/wallet.spec.ts
 import { Wallet } from 'multicore-client';
 import { expect } from 'chai';
-=======
-import { expect } from 'chai';
-import { Wallet } from 'multicore-client';
-import { Api } from '../../../src/services/api';
-import { AsyncRPC } from '../../../src/rpc';
-import { Event } from '../../../src/services/event';
-import { WalletStorage } from '../../../src/models/wallet';
->>>>>>> rename and add compatibility:packages/multicore-node/test/integration/models/wallet.integration.ts
 import config from '../../../src/config';
 import { WalletStorage } from '../../../src/models/wallet';
 import { WalletAddressStorage } from '../../../src/models/walletAddress';

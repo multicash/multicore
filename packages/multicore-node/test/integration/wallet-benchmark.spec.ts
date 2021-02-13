@@ -4,18 +4,6 @@ import { expect } from 'chai';
 import { ObjectId } from 'mongodb';
 import * as io from 'socket.io-client';
 import config from '../../src/config';
-<<<<<<< HEAD:packages/multicore-node/test/integration/wallet-benchmark.spec.ts
-=======
-import { createWallet } from '../benchmark/wallet-benchmark';
-import { Event } from '../../src/services/event';
-import { Api } from '../../src/services/api';
-import { WalletAddressStorage } from '../../src/models/walletAddress';
-import { WalletStorage, IWallet } from '../../src/models/wallet';
-import { ParseApiStream } from 'multicore-client';
-import { resetDatabase } from '../helpers';
-import { Wallet } from 'multicore-client';
-import { ICoin, CoinStorage } from '../../src/models/coin';
->>>>>>> rename and add compatibility:packages/multicore-node/test/integration/wallet-benchmark.integration.ts
 import { MongoBound } from '../../src/models/base';
 import { CoinStorage, ICoin } from '../../src/models/coin';
 import { TransactionStorage } from '../../src/models/transaction';

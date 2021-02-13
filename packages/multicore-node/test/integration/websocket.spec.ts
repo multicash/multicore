@@ -3,15 +3,11 @@ import sinon from 'sinon';
 import io = require('socket.io-client');
 import config from '../../src/config';
 import { BitcoinP2PWorker } from '../../src/modules/bitcoin/p2p';
-<<<<<<< HEAD:packages/multicore-node/test/integration/websocket.spec.ts
 import { AsyncRPC } from '../../src/rpc';
 import { Api } from '../../src/services/api';
 import { Event } from '../../src/services/event';
 import { resetDatabase } from '../helpers';
 const { PrivateKey } = require('multicore-lib');
-=======
-const { PrivateKey } = require('multicore-lib');
->>>>>>> rename and add compatibility:packages/multicore-node/test/integration/websocket.integration.ts
 
 const chain = 'BTC';
 const network = 'regtest';

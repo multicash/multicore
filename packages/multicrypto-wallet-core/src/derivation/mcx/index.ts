@@ -1,6 +1,6 @@
 const BitcoreLibMcx = require('multicore-lib-mcx');
 import { AbstractBitcoreLibDeriver } from '../btc';
-export class BchDeriver extends AbstractBitcoreLibDeriver {
+export class McxDeriver extends AbstractBitcoreLibDeriver {
   multicoreLib = BitcoreLibMcx;
   deriveAddress(network, pubKey, addressIndex, isChange) {
     const xpub = new this.multicoreLib.HDPublicKey(pubKey, network);

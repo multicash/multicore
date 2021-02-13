@@ -61,21 +61,12 @@ describe('Ripple Api', function() {
   it('should transform a ripple rpc response into a multicore transaction', async () => {
     const txs = (RippleTxs as any) as Array<FormattedTransactionType>;
     for (const tx of txs) {
-<<<<<<< HEAD:packages/multicore-node/test/integration/ripple/csp.spec.ts
       const multicoreTx = (await XRP.transform(tx, 'testnet')) as IXrpTransaction;
       expect(multicoreTx).to.have.property('chain');
       expect(tx.address).to.eq(multicoreTx.from);
       expect(tx.outcome.ledgerVersion).to.eq(multicoreTx.blockHeight);
       expect(tx.outcome.fee).to.eq((multicoreTx.fee / 1e6).toString());
       expect(Number(tx.outcome.balanceChanges[multicoreTx.from][0].value)).to.be.lt(0);
-=======
-      const multicoreTx = (await XRP.transform(tx, 'mainnet')) as IXrpTransaction;
-      expect(multicoreTx).to.have.property('chain');
-      expect(tx.address).to.eq(multicoreTx.from);
-      expect(tx.outcome.ledgerVersion).to.eq(multicoreTx.blockHeight);
-      expect(tx.outcome.fee).to.eq((multicoreTx.fee / 1e6).toString());
-      expect(Number(tx.outcome.balanceChanges[multicoreTx.from][0].value)).to.be.lt(0);
->>>>>>> rename and add compatibility:packages/multicore-node/test/integration/ripple/csp.integration.ts
       if (tx.outcome.deliveredAmount) {
         expect(Object.keys(tx.outcome.balanceChanges)).to.contain(multicoreTx.to!);
         expect(tx.outcome.deliveredAmount!.value).to.eq((multicoreTx.value / 1e6).toString());

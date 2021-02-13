@@ -12,8 +12,8 @@ const providers = {
   ETH: new ETHTxProvider(),
   ERC20: new ERC20TxProvider(),
   ETHMULTISIG: new ETHMULTISIGTxProvider(),
-  XRP: new XRPTxProvider(),
-  MCX: new MCXTxProvider()
+  MCX: new MCXTxProvider(),
+  XRP: new XRPTxProvider()
 };
 
 export class TransactionsProxy {
