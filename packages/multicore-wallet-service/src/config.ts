@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: '/',
+  basePath: '/mws/api',
   disableLogs: false,
   port: 3232,
 
@@ -32,12 +32,12 @@ module.exports = {
     }
   },
   blockchainExplorerOpts: {
-    mxc: {
+    mcx: {
       livenet: {
-        url: 'https://api.multicash.dev'
+        url: 'http://localhost:3000'
       },
       testnet: {
-        url: 'https://api.multicash.dev',
+        url: 'http://localhost:3000',
         regtestEnabled: false
       }
     },

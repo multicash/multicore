@@ -207,7 +207,7 @@ export class Credentials {
       } else if (this.coin == 'xrp') {
         coin = '144';
       } else if (this.coin == 'mcx') {
-        coin = '0'; // TODO: which number
+        coin = '725';
       } else {
         throw new Error('unknown coin: ' + this.coin);
       }

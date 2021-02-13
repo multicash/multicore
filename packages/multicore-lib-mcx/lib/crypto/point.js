@@ -73,7 +73,8 @@ Point.getN = function getN() {
   return new BN(ec.curve.n.toArray());
 };
 
-Point.prototype._getX = Point.prototype.getX;
+if (!Point.prototype._getX)
+  Point.prototype._getX = Point.prototype.getX;
 
 /**
  *
@@ -85,7 +86,8 @@ Point.prototype.getX = function getX() {
   return new BN(this._getX().toArray());
 };
 
-Point.prototype._getY = Point.prototype.getY;
+if (!Point.prototype._getY)
+  Point.prototype._getY = Point.prototype.getY;
 
 /**
  *
@@ -146,5 +148,19 @@ Point.pointToCompressed = function pointToCompressed(point) {
   }
   return BufferUtil.concat([prefix, xbuf]);
 };
+
+// todo: needs test case
+Point.prototype.hasSquare = function() {
+  return !this.isInfinity() && this.isSquare(this.getY());
+}
+
+// todo: needs test cases
+Point.prototype.isSquare = function(x) {
+  let p = new BN('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F', 'hex');
+  let x0 = new BN(x);
+  let base = x0.toRed(BN.red(p));
+  let res = base.redPow(p.sub(BN.One).div(new BN(2))).fromRed(); //refactor to BN arithmetic operations
+  return res.eq(new BN(1));
+}
 
 module.exports = Point;
