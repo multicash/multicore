@@ -1,6 +1,6 @@
 import * as async from 'async';
-import { BitcoreLib } from 'multicrypto-wallet-core';
 import _ from 'lodash';
+import { BitcoreLib } from 'multicrypto-wallet-core';
 import { IChain, INotificationData } from '..';
 import { ClientError } from '../../errors/clienterror';
 import logger from '../../logger';

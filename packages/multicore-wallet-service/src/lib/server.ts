@@ -42,7 +42,7 @@ const Bitcore_ = {
   bch: require('multicore-lib-cash'),
   eth: Bitcore,
   xrp: Bitcore,
-  mcx: require('multicore-lib-mcx'),
+  mcx: require('multicore-lib-mcx')
 };
 
 const Common = require('./common');

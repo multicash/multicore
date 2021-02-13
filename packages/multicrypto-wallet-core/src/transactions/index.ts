@@ -3,8 +3,8 @@ import { BTCTxProvider } from './btc';
 import { ERC20TxProvider } from './erc20';
 import { ETHTxProvider } from './eth';
 import { ETHMULTISIGTxProvider } from './eth-multisig';
-import { XRPTxProvider } from './xrp';
 import { MCXTxProvider } from './mcx';
+import { XRPTxProvider } from './xrp';
 
 const providers = {
   BTC: new BTCTxProvider(),

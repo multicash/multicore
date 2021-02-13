@@ -1,6 +1,6 @@
+import _ from 'lodash';
 import { Transactions, Validation } from 'multicrypto-wallet-core';
 import { Web3 } from 'multicrypto-wallet-core';
-import _ from 'lodash';
 import { IAddress } from 'src/lib/model/address';
 import { IChain, INotificationData } from '..';
 import logger from '../../logger';

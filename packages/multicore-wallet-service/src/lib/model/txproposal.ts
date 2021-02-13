@@ -1,5 +1,5 @@
-import { Transactions } from 'multicrypto-wallet-core';
 import _ from 'lodash';
+import { Transactions } from 'multicrypto-wallet-core';
 import { ChainService } from '../chain/index';
 import logger from '../logger';
 import { TxProposalLegacy } from './txproposal_legacy';

@@ -2,8 +2,8 @@ import through2 from 'through2';
 import { StreamTransactionParams } from '../../../types/namespaces/ChainStateProvider';
 import { StreamBlocksParams } from '../../../types/namespaces/ChainStateProvider';
 
-import { Validation } from 'multicrypto-wallet-core';
 import { ObjectId } from 'mongodb';
+import { Validation } from 'multicrypto-wallet-core';
 import { LoggifyClass } from '../../../decorators/Loggify';
 import { MongoBound } from '../../../models/base';
 import { IBlock } from '../../../models/baseBlock';

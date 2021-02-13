@@ -1,8 +1,8 @@
 'use strict';
 
-import * as CWC from 'multicrypto-wallet-core';
 import { EventEmitter } from 'events';
 import _ from 'lodash';
+import * as CWC from 'multicrypto-wallet-core';
 import sjcl from 'sjcl';
 import { Constants, Utils } from './common';
 import { Credentials } from './credentials';

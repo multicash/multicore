@@ -244,7 +244,7 @@ export class EmailService {
       bch: 'BCH',
       eth: 'ETH',
       xrp: 'XRP',
-      mcx: 'MCX',
+      mcx: 'MCX'
     };
 
     const data = _.cloneDeep(notification.data);

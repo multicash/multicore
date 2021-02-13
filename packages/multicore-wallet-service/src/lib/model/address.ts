@@ -1,5 +1,5 @@
-import { Deriver } from 'multicrypto-wallet-core';
 import _ from 'lodash';
+import { Deriver } from 'multicrypto-wallet-core';
 import { AddressManager } from './addressmanager';
 
 const $ = require('preconditions').singleton();
