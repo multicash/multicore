@@ -27,6 +27,7 @@
   "author": "Micah Riggan",
   "license": "MIT",
   "dependencies": {
+    "ethers": "4.0.37",
     "multicore-lib": "^8.24.2",
     "multicore-lib-cash": "^8.22.0",
     "multicore-lib-mcx": "^8.24.2",

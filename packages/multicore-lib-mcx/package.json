@@ -1,6 +1,6 @@
 {
   "name": "multicore-lib-mcx",
-  "version": "8.22.0",
+  "version": "8.24.2",
   "description": "A pure and powerful JavaScript Bitcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -29,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/multicash/multicore/tree/master/packages/multicore-lib"
+    "url": "https://github.com/multicash/multicore/tree/master/packages/multicore-lib-mcx"
   },
   "browser": {
     "request": "browser-request"
@@ -39,12 +39,12 @@
     "bn.js": "=4.11.8",
     "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
-    "elliptic": "=6.4.0",
+    "elliptic": "^6.5.3",
     "inherits": "=2.0.1",
-    "lodash": "=4.17.15"
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
-    "multicore-build": "^8.22.0",
+    "multicore-build": "^8.24.2",
     "brfs": "2.0.2",
     "chai": "4.2.0",
     "gulp": "4.0.2",
