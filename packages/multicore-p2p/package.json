@@ -1,6 +1,6 @@
 {
   "name": "multicore-p2p",
-  "version": "8.24.2",
+  "version": "8.24.3",
   "description": "Interface to the bitcoin P2P network for multicore",
   "main": "index.js",
   "scripts": {
@@ -21,14 +21,14 @@
   "dependencies": {
     "bloom-filter": "^0.2.0",
     "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
-    "multicore-lib": "^8.24.2",
+    "multicore-lib": "^8.24.3",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {
     "brfs": "1.6.1",
     "chai": "1.10.0",
     "gulp": "4.0.2",
-    "multicore-build": "^8.24.2",
+    "multicore-build": "^8.24.3",
     "sinon": "1.17.7"
   },
   "license": "MIT",

@@ -1,6 +1,6 @@
 {
   "name": "multicore-mnemonic",
-  "version": "8.24.2",
+  "version": "8.24.3",
   "description": "BIP39 Mnemonics implemented for Bitcore.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -41,10 +41,10 @@
     "chai": "4.2.0",
     "gulp": "4.0.2",
     "mocha": "5.2.0",
-    "multicore-build": "^8.24.2"
+    "multicore-build": "^8.24.3"
   },
   "dependencies": {
-    "multicore-lib": "^8.24.2",
+    "multicore-lib": "^8.24.3",
     "unorm": "^1.4.1"
   },
   "peerDependencies": {

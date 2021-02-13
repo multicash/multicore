@@ -1,6 +1,6 @@
 {
   "name": "multicore-build",
-  "version": "8.24.2",
+  "version": "8.24.3",
   "description": "A helper for common tasks to build multicore modules'",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "multicore-lib-mcx",
-  "version": "8.24.2",
+  "version": "8.24.3",
   "description": "A pure and powerful JavaScript Bitcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -47,7 +47,7 @@
     "brfs": "2.0.2",
     "chai": "4.2.0",
     "gulp": "4.0.2",
-    "multicore-build": "^8.24.2",
+    "multicore-build": "^8.24.3",
     "sinon": "7.5.0"
   },
   "license": "MIT",

@@ -1,7 +1,7 @@
 {
   "name": "multicore-insight",
   "description": "A blockchain explorer for Bitcore",
-  "version": "8.24.2",
+  "version": "8.24.3",
   "repository": "https://github.com/multicash/multicore/tree/master/packages/multicore-insight",
   "bugs": {
     "url": "https://github.com/bitpay/multicore/issues"
