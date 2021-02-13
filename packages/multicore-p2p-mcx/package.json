@@ -1,6 +1,6 @@
 {
   "name": "multicore-p2p-mcx",
-  "version": "8.24.3",
+  "version": "8.24.4",
   "description": "Interface to the bitcoin P2P network for multicore",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "bloom-filter": "^0.2.0",
     "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
     "multicore-lib": "^8.24.3",
-    "multicore-lib-mcx": "^8.24.3",
+    "multicore-lib-mcx": "^8.24.4",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {

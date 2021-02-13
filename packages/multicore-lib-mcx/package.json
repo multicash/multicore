@@ -1,6 +1,6 @@
 {
   "name": "multicore-lib-mcx",
-  "version": "8.24.3",
+  "version": "8.24.4",
   "description": "A pure and powerful JavaScript Bitcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",

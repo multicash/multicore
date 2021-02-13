@@ -1,6 +1,6 @@
 {
   "name": "multicrypto-wallet-core",
-  "version": "8.24.3",
+  "version": "8.24.4",
   "description": "A multi-currency support library for address derivation, private key creation, and transaction creation",
   "main": "./ts_build/src/index.js",
   "types": "./ts_build/src/index.d.ts",
@@ -31,7 +31,7 @@
     "info": "0.0.6-beta.0",
     "multicore-lib": "^8.24.3",
     "multicore-lib-cash": "^8.24.3",
-    "multicore-lib-mcx": "^8.24.3",
+    "multicore-lib-mcx": "^8.24.4",
     "ripple-binary-codec": "0.2.6",
     "ripple-keypairs": "git+https://git@github.com/bitpay/ripple-keypairs.git#8d3a4643a8ddfce8222786e1e5a3e85a89a5b7f5",
     "ripple-lib": "^1.8.0",
